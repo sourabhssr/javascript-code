@@ -1,0 +1,19 @@
+<script>
+    var arr = [100,50,80,40,20];
+    /*
+      for-in
+      for(index in arr){
+          document.write(arr[index]);
+      }
+    */
+    //arr.push("hello");
+    //arr.unshift(500);
+
+    //arr.splice(3,0,5000);         //to manage the array
+   // delete arr[2];
+    
+    arr.pop();         // --> it will remove last element of the array
+    arr.shift();       // -->  it will remove first element of array
+    for(i in arr)
+    document.write("<br>"+i+  ":"+arr[i]);
+</script>

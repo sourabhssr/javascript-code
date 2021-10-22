@@ -1,0 +1,31 @@
+<script>
+    // n=100
+    // 2 to n/2
+    //var n = prompt("enter a number")
+    
+    function prime(n){
+        var i = 2;
+        var status = false;
+        if(n<=1)
+        return true;
+
+        while(i<=parseInt(n/2)){
+            if(n%i==0){
+                status = true;
+                break;
+            }
+            i++;
+        }
+        return status;
+    }
+    var x = 2;
+    while(x<=1000){
+        if(prime(x)==false)
+        document.writeln(x)
+        x++;
+
+    }
+    
+    
+
+</script>

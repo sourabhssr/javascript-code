@@ -1,0 +1,33 @@
+<script>
+    /*
+     customer(object)
+     property = id,name,mobile,age
+
+    */
+
+   var customerList = [
+       {"id" : 1,"cname":"sourabh","mobile":"746321471","age":22},
+       {"id" : 2,"cname":"rajput","mobile":"746321471","age":21},
+       {"id" : 3,"cname":"ssr","mobile":"746321471","age":20}
+   ]
+   document.write("<table border = '1' width = '100%'> ");
+   document.write("<tr>");
+   document.write("<td>Id</td>");
+   document.write("<td>cname</td>");
+   document.write("<td>mobile</td>");
+   document.write("<td>age</td>");
+   document.write("</tr>");
+
+   for(index in customerList){
+       var obj = customerList[index];
+      
+        document.write("<tr>");
+        document.write("<td>"+obj.id+"</td>");
+        document.write("<td>"+obj.cname+"</td>");
+        document.write("<td>"+obj.mobile+"</td>");
+        document.write("<td>"+obj.age+"</td>");
+        document.write("</tr>");
+   }
+   document.write("</table>")
+
+</script>

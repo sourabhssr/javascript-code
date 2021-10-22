@@ -1,0 +1,38 @@
+<script>
+    /*
+    customer (object)
+       properties/attributes/ data-member:-id,name,mobile,age
+       behaviours :- deposite(),withdraw(), balanceEnquiry()
+    */
+
+   function Customer(id,name,mobile,age){
+       this.id = id;
+       this.name = name;
+       this.mobile= mobile;
+       this.age = age;
+       this.bal = 0;
+
+       this.deposite = function(amount){
+           this.bal =this.bal + amount;
+           document.write("<br> Deposite : "+amount);
+       }
+       this.balanceEnquiry = function(){
+           document.write("<br> Total balance : "+this.bal);
+       }
+        this.withdrawal = function(){
+            document.write("<br> 2000 withdraw :")
+        }
+        this.showInformation = function(){
+            document.write("<br> Id   : "+this.id);
+            document.write("<br>Name   : "+this.name);
+            document.write("<br>Mobile   : "+this.mobile);
+            document.write("<br>Age   : "+this.age);
+        }   
+    }
+    var c = new Customer(100,"Sourabh","346873264",20);
+    c.showInformation();
+    c.balanceEnquiry();
+    c.deposite();
+    c.balanceEnquiry();
+
+</script>
